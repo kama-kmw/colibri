@@ -115,6 +115,14 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+.tell__head {
+  color: #fff;
+}
+
+.tell__head:hover {
+  color: rgb(230, 223, 223);
+}
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -642,6 +650,18 @@ section {
   }
 }
 
+
+@media (max-width: 500px) {
+  .tell__head-two {
+    display: none;
+  }
+  .tell__head:hover {
+    color: #fff;
+  }
+
+}
+
+
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
@@ -899,6 +919,7 @@ section {
 }
 .appointment .php-email-form .form-group {
   padding-bottom: 8px;
+  margin-top: 0;
 }
 .appointment .php-email-form .validate {
   display: none;
@@ -1129,6 +1150,11 @@ section {
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
+.doctors-container {
+  display: flex;
+  justify-content: center;
+}
+
 .doctors .member {
   margin-bottom: 20px;
   overflow: hidden;
@@ -1540,6 +1566,10 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
+}
+.tell__footer {
+  color: #2f2f2f;
+  margin-left: 3px;
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
