@@ -14,7 +14,7 @@ if(isset($_POST['submit_comment'])) {
 mail('Kamil.l2014@list.ru', 'Комментарий с сайта.', $message);
 }
 
-header('Location: ../index.html');
+header('Location: ../index.html#adres');
 exit;
 
 ?>
