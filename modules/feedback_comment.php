@@ -11,7 +11,7 @@ $message = 'Пользователь '.$name.' оставил комментар
 
 // Отправляем если кнопка нажата
 if(isset($_POST['submit_comment'])) {
-mail('Kamil.l2014@list.ru', 'Комментарий с сайта.', $message);
+mail('ascolibri12@gmail.com', 'Комментарий с сайта.', $message);
 }
 
 header('Location: ../index.html#adres');
