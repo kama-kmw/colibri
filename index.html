@@ -417,18 +417,18 @@
         <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Ваше Имя" required>
+              <input type="text" name="name" class="form-control-surha" id="name" placeholder="Ваше Имя" required>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Ваш Email" required>
+              <input type="email" class="form-control-surha" name="email" id="email" placeholder="Ваш Email" required>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Ваш Телефон" required>
+              <input type="tel" class="form-control-surha" name="phone" id="phone" placeholder="Ваш Телефон" required>
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 form-group mt-3">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Выберите Дату" required>
+              <input type="datetime" name="date" class="form-control-surha datepicker" id="date" placeholder="Выберите Дату" required>
             </div>
             <div class="col-md-4 form-group mt-3">
               <select name="department" id="department" class="form-select">
@@ -449,7 +449,7 @@
           </div>
 
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Сообщение"></textarea>
+            <textarea class="form-control-surha" name="message" rows="5" placeholder="Сообщение"></textarea>
           </div>
           <div class="my-3">
             <div class="loading">Отправка</div>
@@ -1229,13 +1229,13 @@
 
           <div class="col-lg-6">
             <h3>Оставьте свой комментарий</h3>
-            <form action="modules/feedback_comment.php" method="post"  class="php-email-form">
+            <form action="modules/feedback_comment.php" method="post">
               <div class="row">
-                <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Ваше Имя" required>
+                <div class="col">
+                  <input type="text" name="name" class="form-control" placeholder="Ваше Имя" required>
                 </div>
-                <div class="col form-group">
-                  <input type="text" class="form-control" name="phone" id="email" placeholder="Ваш номер или Email" required>
+                <div class="col">
+                  <input type="text" class="form-control" name="phone_с" placeholder="Ваш номер или Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
@@ -1246,7 +1246,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Ваше сообщение было отправлено. Спасибо Вам</div>
               </div> -->
-              <div class="text-center"><input type="submit" name="submit_comment" value="Отправить"></div>
+              <div class="text-center mt-3"><button type="submit" class="button-surha" name="submit_comment">Отправить Сообщение</button></div>
             </form>
           </div>
 
