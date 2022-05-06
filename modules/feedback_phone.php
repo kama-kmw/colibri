@@ -7,8 +7,7 @@ $message = 'Пользователь оставил свой номер теле
 
 // Отправляем если кнопка нажата
 if(isset($_POST['submit_phone'])) {
-//   mail('phil.psy@rudn.ru', 'Отзыв с сайта.', $message);
-mail('surha_dag@mail.ru', 'Просьба перезвонить с сайта.', $message);
+mail('Kamil.l2014@list.ru', 'Просьба перезвонить с сайта.', $message);
 }
 
 header('Location: ../index.html#footer');
