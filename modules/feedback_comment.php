@@ -10,7 +10,7 @@ $message = 'Пользователь '.$name.' оставил комментар
 Номер или почта - '.$phone;
 
 // Отправляем если кнопка нажата
-if(isset($_POST['submit_phone'])) {
+if(isset($_POST['submit_comment'])) {
 mail('Kamil.l2014@list.ru', 'Комментарий с сайта.', $message);
 }
 
