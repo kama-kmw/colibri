@@ -1195,7 +1195,7 @@
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a402a45b6d8417b7e50bd45799e8b261700b9b19d7c8599db2df90bbf6023ea&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
       </div>
 
-      <div class="container">
+      <div class="container" id="adres">
 
         <div class="row mt-5">
 
@@ -1228,18 +1228,16 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <h3>Оставьте свой комментарий</h3>
+            <form action="modules/feedback_comment.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ваше Имя" required>
                 </div>
                 <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Ваш Email" required>
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Ваш номер или Email" required>
                 </div>
               </div>
-              <!-- <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div> -->
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Сообщение" required></textarea>
               </div>
